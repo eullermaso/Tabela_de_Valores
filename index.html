@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Tabelas</title>
+</head>
+<body>
+
+    <header id="header">
+        <div id="logo">
+            <img id="marca" src="imagens/76449581-3c99-4b84-87a5-cd4f27e402ff-removebg-preview (1).png" alt="Logo_Confeitaria">
+        </div>
+
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">SOBRE NÓS</a>
+            <a href="#">LISTA</a>
+        </nav>
+    </header>
+    <section id="banner">
+        <div id="s1">
+            <div>
+                <h1>CONFEI<span>TARIA</span></h1>
+            </div>
+            
+            <div id="botao">
+                <a href="#second"><button id="bt1">Formulário</button></a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="second">
+
+        <div id="alerta">
+            <label id="cuidado" for=""></label>
+        </div>
+
+        <div id="head">
+            <h1>Informações do Produto</h1>
+        </div>
+
+        <div class="inputs">
+            <div id="pert">
+            <label for="">
+                Nome do Produto
+                <div class="produto">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <input type="text" id="nome" placeholder="Digite o nome do produto">
+                </div>
+            </label>
+                </div>
+            </div>
+        
+
+        <form id="form" action="">
+                <div id="insumos">
+                    <h2>Lista de insumos</h2>
+                    <div class="inputs">
+                        <label for="">
+                            Nome do insumo
+                            <div class="produto">
+                                <i class="fa-solid fa-egg"></i>
+                                <input type="text" id="insumo" placeholder="Digite o nome do insumo">
+                            </div>
+                        </label>
+                        <label for="">
+                            Quantidade de insumo para o produto
+                            <div class="produto">
+                                <i id="icon_list" class="fa-solid fa-list-ol"></i>
+                                <input type="number" id="qtdeProd" placeholder="Digite a quantidade de insumo">
+                            </div>
+                        </label>
+                        <label for="">
+                            Quantidade de insumo na embalagem
+                            <div class="produto">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <input type="number" id="qtdeEmbalagem" placeholder="Digite a quantidade de insumo">
+                            </div>
+                        </label>
+                        <label for="">
+                            Valor do insumo
+                            <div class="produto">
+                                <i id="icon_valor" class="fa-solid fa-dollar-sign"></i>
+                                <input type="number" id="valor" placeholder="Digite o valor do insumo">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                
+                <div>
+                    <button id="bt2" type="submit">Enviar</button>
+                </div>
+
+            </div>
+
+        </form>
+        <div class="inputs">
+            <div id="pert">
+            <label for="">
+                % de Lucro
+                <div class="produto">
+                    <i class="fa-solid fa-percent"></i>
+                    <input type="number" id="porcentagem" placeholder="Digite a % de lucro">
+                </div>
+            </label>
+                </div>
+            </div>
+    </section>
+
+    <section id="tabela">
+
+        <h1 id="title_valor">Tabela de Valores</h1>
+
+        <div>
+            <table>
+                <caption id="caption">Produto</caption>
+                <thead>
+                    <tr>
+                        <td class="percent" colspan="3">Porcentagem</td>
+                        <td class="percent" id="percent">0%</td>
+                    </tr>
+                    <tr>
+                        <th>Insumo</th>
+                        <th>Qtde. de Insumo</th>
+                        <th>Qtde. emb.</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <td></td>            
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Lucro</td>
+                        <td id="lucro"></td>
+                    </tr>
+                </tfoot>    
+            </table>
+
+           <!-- <div>
+                <button >Salvar</button>
+                <button id="cancelar">Cancelar</button>
+            </div> -->
+        </div>
+    </section>
+
+    <script type="text/javascript" src="menu.js"></script>
+    <script type="text/javascript" src="tabela.js"></script>
+    
+</body>
+</html>

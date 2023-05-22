@@ -92,10 +92,16 @@ nav a:hover{
     justify-content: center;
     
 }
+#buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 
 
-/*#bt1:hover{
+/*#bt1:hover,#bt3:hover{
     transform: scale(1.05);
     
 }*/

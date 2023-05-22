@@ -2,7 +2,7 @@ const salvar = document.getElementById('bt2')
 const cancelar = document.getElementById('cancelar')
 const form = document.querySelector('#form')
 const per = document.getElementById('porcentagem')
-
+const cancelamento = document.getElementById('bt3');
 const mome = document.getElementById('nome')
 const cuidado = document.getElementById('cuidado');
 
@@ -188,3 +188,8 @@ salvar.addEventListener('click', ()=>{
     }
 })
 
+
+cancelamento.addEventListener('click', ()=>{
+    per.disabled = false;
+    mome.disabled = false;
+})
